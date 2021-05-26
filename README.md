@@ -25,6 +25,11 @@ You could use [this post](https://www.danielmartingonzalez.com/en/home-assistant
 
 > Warning! Without chatID the bot wont be able to send automated messages and will only be able to respond to messages.
 
+# Deployment
+
+## Heroku
+<p><a href="https://heroku.com/deploy?template=https://github.com/reaitten/jackett2telegram"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
+
 ## Docker Installation
 
 ```bash
