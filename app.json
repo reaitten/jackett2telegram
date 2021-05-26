@@ -1,0 +1,30 @@
+{
+    "name": "jackett2telegram",
+    "description": "Jackett RSS to Telegram Bot",
+    "logo": "https://raw.githubusercontent.com/danimart1991/jackett2telegram/main/docs/images/logo.png",
+    "keywords": [
+      "rss",
+      "telegram",
+      "python",
+      "rss-bot"
+    ],
+    "repository": "https://github.com/reaitten/jackett2telegram",
+    "website": "https://github.com/reaitten/jackett2telegram",
+    "success_url": "https://t.me/orsixtyone",
+    "stack": "container",
+    "env": {
+      "CHATID": {
+        "description": "The ID of a group or channel. Use @JsonDumpBot and forward a message from a channel to the bot, and it will return the ID.",
+        "required": true
+      },
+      "TOKEN": {
+        "description": "The Telegram Bot Token that you get from @BotFather.",
+        "required": true
+      }
+    },
+    "addons": [
+      {
+        "plan": "heroku-postgresql"
+      }
+    ]
+}
