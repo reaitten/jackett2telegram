@@ -5,6 +5,7 @@ import sqlite3
 import string
 import unicodedata
 import xml.etree.ElementTree as ElementTree
+from dotenv import load_dotenv
 from datetime import datetime
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler, Defaults
@@ -18,6 +19,8 @@ config_path = os.path.join(os.path.abspath(
 db_path = os.path.join(config_path, "rss.db")
 os.makedirs(blackhole_path, exist_ok=True)
 os.makedirs(config_path, exist_ok=True)
+
+load_dotenv('config.env')
 
 levels = {
     'critical': logging.CRITICAL,
